@@ -1,0 +1,44 @@
+{
+  "name": "usepref",
+  "version": "0.0.4",
+  "description": "A simple react user preference management library.",
+  "author": {
+    "email": "aerilym@pm.me",
+    "name": "Aerilym",
+    "url": "https://github.com/aerilym/usepref"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./storage/*": "./dist/storage/*.js",
+    "./providers/*": "./dist/providers/*.js"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist/"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "transpile": "tsup --config tsup.config.ts",
+    "build": "rm -rf dist && pnpm transpile"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "react": "19.0.0-rc-66855b96-20241106"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "npm:types-react@19.0.0-rc.1",
+      "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
+    }
+  },
+  "packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b"
+}
