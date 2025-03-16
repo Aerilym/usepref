@@ -1,7 +1,7 @@
 import {safeTrySync} from "../util/try.js";
 import {MemoryStorage, MemoryStorageString, type MemoryStorageValueType} from "./memory.js";
 
-type StorageInterface = Storage;
+export type StorageInterface = Storage;
 
 function getDefaultStorage() {
   if (typeof window === 'undefined') {

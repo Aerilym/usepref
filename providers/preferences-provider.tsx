@@ -28,3 +28,5 @@ export const usePreferences = () => {
     setItem: instance.setItem.bind(instance),
   }
 }
+
+export const usePref = usePreferences;

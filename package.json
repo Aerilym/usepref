@@ -1,7 +1,7 @@
 {
   "name": "usepref",
-  "version": "0.0.4",
-  "description": "A simple react user preference management library.",
+  "version": "1.0.0",
+  "description": "A simple user preference management library.",
   "author": {
     "email": "aerilym@pm.me",
     "name": "Aerilym",
@@ -34,7 +34,7 @@
     "typescript": "^5.5.3"
   },
   "dependencies": {
-    "react": "19.0.0-rc-66855b96-20241106"
+    "react": "*"
   },
   "pnpm": {
     "overrides": {
