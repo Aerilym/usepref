@@ -22,7 +22,9 @@
   "scripts": {
     "check-types": "tsc --noEmit",
     "transpile": "tsup --config tsup.config.ts",
-    "build": "rm -rf dist && pnpm transpile"
+    "build": "rm -rf dist && pnpm transpile",
+    "release": "pnpm build && pnpm publish --access public",
+    "release:no-git": "pnpm build && pnpm publish --access public --no-git-checks"
   },
   "devDependencies": {
     "@types/node": "^22.10.1",
